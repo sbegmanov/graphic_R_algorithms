@@ -9,9 +9,9 @@ my_sort <- function(arrays) {
     for(j in 1:(length_arr - i)) {
       if(arrays[j] > arrays[j + 1]) {
         #swap
-        temp <- arrays[j]
+        flag <- arrays[j]
         arrays[j] <- arrays[j + 1]
-        arrays[j + 1] <- temp
+        arrays[j + 1] <- flag
       }
     }
   }
@@ -19,10 +19,10 @@ my_sort <- function(arrays) {
 }
 
 bubble_sorting_main <- function(){
-  scores <- c(60, 50, 95, 80, 70)
+  scores <- c(60, 95, 80, 70, 55)
   sorted_scores <- my_sort(scores)
   # Print with commas
-  cat(paste(sorted_scores, collapse = ","))
+  cat(paste(sorted_scores, collapse = ", "))
 }
 
 bubble_sorting_main()

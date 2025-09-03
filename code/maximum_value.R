@@ -1,5 +1,5 @@
 # Compare arrays[i] with arrays[i + 1] , if arrays[i] > arrays[i + 1] are exchanged.
-# So continue until the last number, arrays[length - 1] is the maximum.
+# So continue until the last number, arrays[length] is the maximum.
 
 
 # Define a custom max function
