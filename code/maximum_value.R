@@ -4,9 +4,11 @@
 
 # Define a custom max function
 my_max <- function(arrays) {
+  
   length_arr <- length(arrays)
   
   for (i in 1:(length_arr - 1)) {
+    
     if(arrays[i] > arrays[i + 1]) {
       temp <- arrays[i]
       arrays[i] <- arrays[i + 1]
@@ -19,11 +21,12 @@ my_max <- function(arrays) {
 }
 
 # Main function
-max_value_main <- function() {
+max_value <- function() {
+  
   scores <- c(60, 50, 95, 80, 70)
   maxValue <- my_max(scores)
   print(paste("Max Value = ", maxValue))
 }
 
 # Run main
-max_value_main()
+max_value()
