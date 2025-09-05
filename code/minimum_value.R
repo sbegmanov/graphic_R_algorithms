@@ -4,12 +4,10 @@
 
 # Define a custom min function
 my_min <- function(arrays) {
-  
   minIndex <- 1  # R is 1-based indexing
   length_arr <- length(arrays)
   
   for(j in 1:length_arr) {
-    
     if(arrays[minIndex] > arrays[j]) {
       minIndex <- j
     }

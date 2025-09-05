@@ -3,16 +3,13 @@
 
 # Define a selection sort function
 my_sort <- function(arrays) {
-  
   length_arr <- length(arrays)
   
   for(i in 1:(length_arr - 1)) {
-    
     min_index <- i
     min_value <- arrays[min_index]
     
     for(j in i:(length_arr - 1)) {
-      
       if(min_value > arrays[j + 1]) {
         min_value <- arrays[j + 1]
         min_index <- j + 1
@@ -21,7 +18,6 @@ my_sort <- function(arrays) {
     
     # Swap if needed
     if(i != min_index) {
-      
       temp <- arrays[i]
       arrays[i] <- arrays[min_index]
       arrays[min_index] <- temp

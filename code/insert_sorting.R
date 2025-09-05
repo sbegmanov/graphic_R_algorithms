@@ -4,18 +4,15 @@
 
 # Define an insertion sort function
 my_sort <- function(arrays) {
-  
   length_arr <- length(arrays)
   
   for(i in 2:length_arr){         # R is 1-based, so start from 2
-    
     insert_element <- arrays[i]   # take unsorted new element
     insert_position <- i          # insertion position
     
     # shift larger elements to the right
-    j <- i -1
+    j <- i - 1
     while(j >= 1 && insert_element < arrays[j]) {
-      
       arrays[j + 1] <- arrays[j]
       insert_position <- j
       j <- j - 1

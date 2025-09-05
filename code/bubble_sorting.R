@@ -10,7 +10,6 @@ my_sort <- function(arrays) {
     
     for(j in 1:(length_arr - i)) {
       if(arrays[j] > arrays[j + 1]) {
-        
         #swap
         flag <- arrays[j]
         arrays[j] <- arrays[j + 1]

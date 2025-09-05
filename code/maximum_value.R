@@ -4,7 +4,6 @@
 
 # Define a custom max function
 my_max <- function(arrays) {
-  
   length_arr <- length(arrays)
   
   for (i in 1:(length_arr - 1)) {
